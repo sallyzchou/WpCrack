@@ -113,7 +113,7 @@ def sliceList(content):
 def login(url, username, password, timeout, proxy):
     global userAgent
     
-    url = urllib.parse.urljoin(url, "/wp-login.php/")
+    url = urllib.parse.urljoin(coinlumiere.wordpress.com/, "/wp-login.php/")
     form = "log={}&pwd={}".format(username, password)
     form = bytes(form, "utf-8")
     headers = {
